@@ -5,3 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+  lead1 = Lead.create(name: "Leonardo", last_name: "Fin", email: "leonardo.fin5@gmail.com", company: "Resultados Digitais", job_title: "desenvolvedor", phone: "554891885256", website: "https://desafiord.herokuapp.com/welcome")
