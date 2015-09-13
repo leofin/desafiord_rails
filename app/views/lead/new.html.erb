@@ -1,0 +1,32 @@
+<div class="header">
+  <div class="container">
+    <h1>Contatos</h1>
+  </div>
+</div>
+
+<div class="create">
+  <div class="container">
+    
+    <%= form_for(@lead) do |f| %>  
+    <div class="field">  
+      <%= f.label :name %><br> 
+      <%= f.text_field :name %>
+      <%= f.label :last_name %><br>
+      <%= f.text_field :last_name %>
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+      <%= f.label :company %><br>
+      <%= f.text_field :company %>
+      <%= f.label :job_title %><br>
+      <%= f.text_field :job_title %>
+      <%= f.label :phone %><br>
+      <%= f.text_field :phone %>
+      <%= f.label :website %><br>
+      <%= f.text_field :website %> 
+    </div> 
+    <div class="actions"> 
+      <%= f.submit "Create" %> 
+    </div> 
+    <% end %>
+  </div>
+</div>

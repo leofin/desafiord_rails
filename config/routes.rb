@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 get 'welcome' => 'pages#home'
-get 'search' => 'lead#search'
+get 'lead/search' => 'lead#search'
+get 'lead/new' => 'lead#new'
+post 'lead' => 'lead#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
