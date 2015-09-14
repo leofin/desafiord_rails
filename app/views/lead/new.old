@@ -1,0 +1,20 @@
+<div class="header">
+  <div class="container">
+    <h1>Contatos</h1>
+  </div>
+</div>
+
+<div class="create">
+  <div class="container">
+    
+    <%= form_for(@contato) do |f| %>  
+    <div class="field">  
+      <%= f.label :name %><br> 
+      <%= f.text_field :lead, :name %>
+    </div> 
+    <div class="actions"> 
+      <%= f.submit "Create" %> 
+    </div> 
+    <% end %>
+  </div>
+</div>

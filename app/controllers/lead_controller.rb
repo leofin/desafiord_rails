@@ -5,17 +5,18 @@ class LeadController < ApplicationController
   end
 
   def new
-    @lead = Lead.new
+    @contato = Lead.new
   end
 
   def create
-    @lead = Lead.create(lead_params[:lead])
+    @lead = Lead.new(lead_params)
     if @lead.save
       redirect_to '/lead/search'
     else
       render 'new'
     end
-  end
+    end
+
 
   private
     def lead_params
@@ -23,3 +24,5 @@ class LeadController < ApplicationController
     end
 
 end
+
+
