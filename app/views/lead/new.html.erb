@@ -9,23 +9,36 @@
     
     <%= form_for :lead do |f| %>  
     <div class="field">  
-      <%= f.label :name %> 
+      <%= f.label :name %>
       <%= f.text_field :name %><br/>
+    </div>
+    <div class="field">
       <%= f.label :last_name %>
       <%= f.text_field :last_name %><br />
+    </div>
+    <div class="field">
       <%= f.label :email %>
       <%= f.text_field :email %><br />
+    </div>
+    <div class="field">
       <%= f.label :company %>
       <%= f.text_field :company %><br />
+    </div>
+    <div class="field">
       <%= f.label :job_title %>
       <%= f.text_field :job_title %><br />
+    </div>
+    <div class="field">
       <%= f.label :phone %>
       <%= f.text_field :phone %><br />
+    </div>
+    <div class="field">
       <%= f.label :website %>
       <%= f.text_field :website %><br /> 
     </div> 
     <div class="actions"> 
-      <%= f.submit "Create" %> 
+      <%= f.submit "Create" %>
+      <%= link_to 'Back','search' %> 
     </div> 
     <% end %>
   </div>

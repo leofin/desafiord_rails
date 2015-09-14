@@ -7,12 +7,17 @@
   <div class="container">
     <% @leads.each do |lead| %>
     <div class="lead">
-     <p class="content"> <%= lead.name %></p>
-     <p class="content"> <%= lead.last_name %></p>
-     <p class="content"> <%= lead.email %></p>
-     <p class="content"> <%= lead.company %></p>
-    </div> 
+     <p class="content">Nome: <%= lead.name %></p>
+     <p class="content">Sobrenome: <%= lead.last_name %></p>
+     <p class="content">Email: <%= lead.email %></p>
+     <p class="content">Compania: <%= lead.company %></p>
+     <p class="content">Profissão: <%= lead.job_title %></p>
+     <p class="content">Telefone: <%= lead.phone %></p>
+     <p class="content">Website: <%= lead.website %></p>
+     <p class="content">--------------------------------- </p> 
+   </div> 
     <% end %>
+  <%= link_to 'Cadastrar novo contato', "new" %>
   </div>
- <%= link_to 'Cadastrar novo contato', "new" %>
+  <br />
 </div>
