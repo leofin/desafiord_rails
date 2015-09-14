@@ -16,8 +16,14 @@ class LeadController < ApplicationController
       render 'new'
     end
     end
+  def delete()
+  puts 'deletado'  
+  end
 
-
+  private
+    def delete_params
+       params.require(:delete).pemit(:name) 
+    end
   private
     def lead_params
       params.require(:lead).permit( :name, :last_name, :email, :company, :job_title, :phone, :website)

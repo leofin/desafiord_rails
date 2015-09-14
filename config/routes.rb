@@ -4,6 +4,7 @@ get 'lead/search' => 'lead#search'
 get 'lead/new' => 'lead#new'
 post 'lead' => 'lead#create'
 post 'lead/new' => 'lead#create'   
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
